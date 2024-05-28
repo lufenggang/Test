@@ -1,0 +1,24 @@
+spring:
+  application:
+    #应用名称
+    name: spring-boot-01-kafka-base
+
+  #kafka连接地址（ip+port）
+  kafka:
+    bootstrap-servers: 112.124.53.41:9092
+
+    #配置生产者 (有24个配置)
+#    producer:
+#      #value默认是StringSerializer.class序列化，
+#      value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
+#      #key默认是StringSerializer.class序列化，
+#      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+#
+#    #配置消费者(有24个配置)
+    consumer:
+      auto-offset-reset: earliest
+#
+#    #配置模板默认的主题topic名称
+#    template:
+#      default-topic: default-topic
+
